@@ -12,6 +12,7 @@
 		C4CC9D7B20F6EE6B00913FE6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4CC9D7920F6EE6B00913FE6 /* Main.storyboard */; };
 		C4CC9D7D20F6EE6C00913FE6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4CC9D7C20F6EE6C00913FE6 /* Assets.xcassets */; };
 		C4CC9D8020F6EE6C00913FE6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4CC9D7E20F6EE6C00913FE6 /* LaunchScreen.storyboard */; };
+		C4CC9D8820F6FA8500913FE6 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CC9D8720F6FA8500913FE6 /* StartViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		C4CC9D7C20F6EE6C00913FE6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C4CC9D7F20F6EE6C00913FE6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C4CC9D8120F6EE6C00913FE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C4CC9D8720F6FA8500913FE6 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 			isa = PBXGroup;
 			children = (
 				C4CC9D7520F6EE6B00913FE6 /* AppDelegate.swift */,
+				C4CC9D8720F6FA8500913FE6 /* StartViewController.swift */,
 				C4CC9D7720F6EE6B00913FE6 /* ViewController.swift */,
 				C4CC9D7920F6EE6B00913FE6 /* Main.storyboard */,
 				C4CC9D7C20F6EE6C00913FE6 /* Assets.xcassets */,
@@ -137,6 +140,7 @@
 			files = (
 				C4CC9D7820F6EE6B00913FE6 /* ViewController.swift in Sources */,
 				C4CC9D7620F6EE6B00913FE6 /* AppDelegate.swift in Sources */,
+				C4CC9D8820F6FA8500913FE6 /* StartViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

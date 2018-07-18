@@ -1,0 +1,8 @@
+target '0717_cocoapod' do
+ use_frameworks!
+
+ pod 'Alamofire', '~> 4.7'
+ pod 'Kingfisher', '~> 4.8'
+ pod 'Hero', '~> 1.2'
+
+end

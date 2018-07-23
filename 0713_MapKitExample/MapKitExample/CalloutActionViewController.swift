@@ -24,7 +24,7 @@ final class CalloutActionViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        setRegionToSeoul()
+//        setRegionToSeoul()
         addMuseumAnnotations()
         
     }

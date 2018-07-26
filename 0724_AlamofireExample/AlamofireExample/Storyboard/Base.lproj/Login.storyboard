@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Entry View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="EntryViewController" id="BYZ-38-t0r" customClass="EntryViewController" customModule="AlamofireExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W7c-ze-s8b" customClass="LoginButton" customModule="AlamofireExample" customModuleProvider="target">
+                                <rect key="frame" x="32" y="569" width="311" height="48"/>
+                                <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="uv0-dp-J91"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <state key="normal" title="회원가입">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="24"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="presentSignUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HZg-SK-KRu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6uZ-0R-cjq" customClass="LoginButton" customModule="AlamofireExample" customModuleProvider="target">
+                                <rect key="frame" x="32" y="506" width="311" height="48"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="idq-P2-Fef"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <state key="normal" title="로그인">
+                                    <color key="titleColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="24"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="presentLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jd3-Yl-uNp"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FastCampusLogo" translatesAutoresizingMaskIntoConstraints="NO" id="pE7-ek-yzU">
+                                <rect key="frame" x="101" y="100" width="172" height="38"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="W7c-ze-s8b" secondAttribute="bottom" constant="50" id="BNM-Lp-Ob1"/>
+                            <constraint firstItem="6uZ-0R-cjq" firstAttribute="leading" secondItem="W7c-ze-s8b" secondAttribute="leading" id="Fqa-OD-ehQ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="W7c-ze-s8b" secondAttribute="trailing" constant="16" id="Fxl-5r-hfO"/>
+                            <constraint firstItem="pE7-ek-yzU" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="80" id="GtN-zf-rDa"/>
+                            <constraint firstItem="pE7-ek-yzU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MV6-br-vwT"/>
+                            <constraint firstItem="W7c-ze-s8b" firstAttribute="top" secondItem="6uZ-0R-cjq" secondAttribute="bottom" constant="15" id="MyI-6c-ow3"/>
+                            <constraint firstItem="6uZ-0R-cjq" firstAttribute="trailing" secondItem="W7c-ze-s8b" secondAttribute="trailing" id="Pcg-1d-Fm8"/>
+                            <constraint firstItem="W7c-ze-s8b" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="16" id="vzR-NF-kY6"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="5up-EF-GAf"/>
+                    <connections>
+                        <segue destination="TpP-cN-1mJ" kind="presentation" identifier="EntryToLoginSegue" id="1Hd-9w-KjJ"/>
+                        <segue destination="Psw-xb-yR7" kind="presentation" identifier="EntryToSignUpSegue" id="BMJ-zd-vIx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1708" y="-45.42728635682159"/>
+        </scene>
+        <!--Login View Controller-->
+        <scene sceneID="GhJ-Aw-k8e">
+            <objects>
+                <viewController storyboardIdentifier="LoginViewController" id="TpP-cN-1mJ" customClass="LoginViewController" customModule="AlamofireExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="PhE-DH-FYz"/>
+                        <viewControllerLayoutGuide type="bottom" id="AyO-g2-Pcy"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="faj-eU-Cyw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nyp-Qh-abZ">
+                                <rect key="frame" x="16" y="28" width="24" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="24" id="Lve-Nr-K4L"/>
+                                    <constraint firstAttribute="height" constant="24" id="jlj-bI-YIl"/>
+                                </constraints>
+                                <state key="normal" image="close"/>
+                                <connections>
+                                    <segue destination="4JQ-iO-c33" kind="unwind" unwindAction="unwindToEntry:" id="T7n-nG-ija"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="로그인" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nlp-kM-C7q">
+                                <rect key="frame" x="16" y="82" width="67.5" height="31.5"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="이메일" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="ArB-vf-tXk" customClass="LoginTextField" customModule="AlamofireExample" customModuleProvider="target">
+                                <rect key="frame" x="16" y="153.5" width="343" height="21"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="underlineWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="leftImage" value="email"/>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="비밀번호" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="SAj-ih-RI0" customClass="LoginTextField" customModule="AlamofireExample" customModuleProvider="target">
+                                <rect key="frame" x="16" y="214.5" width="343" height="21"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="leftImage" value="password"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="underlineWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XN3-hO-MX6" customClass="LoginButton" customModule="AlamofireExample" customModuleProvider="target">
+                                <rect key="frame" x="36" y="285.5" width="303" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="fo8-gk-lDN"/>
+                                </constraints>
+                                <state key="normal" title="로그인">
+                                    <color key="titleColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="24"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="requestSignIn:" destination="TpP-cN-1mJ" eventType="touchUpInside" id="76m-AG-1qf"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Nlp-kM-C7q" firstAttribute="leading" secondItem="faj-eU-Cyw" secondAttribute="leading" constant="16" id="6Ph-V4-5GX"/>
+                            <constraint firstItem="SAj-ih-RI0" firstAttribute="top" secondItem="ArB-vf-tXk" secondAttribute="bottom" constant="40" id="C1m-Z5-hBJ"/>
+                            <constraint firstItem="Nlp-kM-C7q" firstAttribute="top" secondItem="Nyp-Qh-abZ" secondAttribute="bottom" constant="30" id="NxN-vK-mH9"/>
+                            <constraint firstAttribute="trailing" secondItem="XN3-hO-MX6" secondAttribute="trailing" constant="36" id="OhS-0d-DrG"/>
+                            <constraint firstItem="Nyp-Qh-abZ" firstAttribute="leading" secondItem="faj-eU-Cyw" secondAttribute="leading" constant="16" id="QLs-89-iln"/>
+                            <constraint firstAttribute="trailing" secondItem="ArB-vf-tXk" secondAttribute="trailing" constant="16" id="Tmu-8i-uUf"/>
+                            <constraint firstItem="SAj-ih-RI0" firstAttribute="leading" secondItem="ArB-vf-tXk" secondAttribute="leading" id="VcS-9f-GhA"/>
+                            <constraint firstItem="XN3-hO-MX6" firstAttribute="leading" relation="lessThanOrEqual" secondItem="faj-eU-Cyw" secondAttribute="leading" constant="36" id="WAl-0P-uxb"/>
+                            <constraint firstItem="ArB-vf-tXk" firstAttribute="top" secondItem="Nlp-kM-C7q" secondAttribute="bottom" constant="40" id="Waj-bQ-cxt"/>
+                            <constraint firstItem="SAj-ih-RI0" firstAttribute="trailing" secondItem="ArB-vf-tXk" secondAttribute="trailing" id="cbP-Cu-dq2"/>
+                            <constraint firstItem="XN3-hO-MX6" firstAttribute="top" secondItem="SAj-ih-RI0" secondAttribute="bottom" constant="50" id="g9Y-RC-WXK"/>
+                            <constraint firstItem="Nyp-Qh-abZ" firstAttribute="top" secondItem="PhE-DH-FYz" secondAttribute="bottom" constant="8" id="gax-XI-D0k"/>
+                            <constraint firstItem="ArB-vf-tXk" firstAttribute="leading" secondItem="faj-eU-Cyw" secondAttribute="leading" constant="16" id="lOo-I4-3C0"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Nlp-kM-C7q" secondAttribute="trailing" id="wY1-8W-u3M"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="passwordTextField" destination="SAj-ih-RI0" id="EyD-2X-eJs"/>
+                        <outlet property="usernameTextField" destination="ArB-vf-tXk" id="1AK-IL-Rf5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qYb-bb-9Rh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="4JQ-iO-c33" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="2502" y="-331"/>
+        </scene>
+        <!--Sign Up View Controller-->
+        <scene sceneID="495-g2-Pks">
+            <objects>
+                <viewController storyboardIdentifier="SignUpViewController" id="Psw-xb-yR7" customClass="SignUpViewController" customModule="AlamofireExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="LTv-Oa-TOm"/>
+                        <viewControllerLayoutGuide type="bottom" id="ebm-dN-dyO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="EID-nf-Wbj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OoV-Hs-6wU">
+                                <rect key="frame" x="16" y="28" width="24" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="WhL-Iq-NHn"/>
+                                    <constraint firstAttribute="width" constant="24" id="kvI-rz-XfE"/>
+                                </constraints>
+                                <state key="normal" image="close"/>
+                                <connections>
+                                    <segue destination="MgN-EF-HNn" kind="unwind" unwindAction="unwindToEntry:" id="N77-Na-7fX"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="회원가입" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PBS-Hl-ahM">
+                                <rect key="frame" x="16" y="82" width="90" height="31.5"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="이메일" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="NYO-3f-z71" customClass="LoginTextField" customModule="AlamofireExample" customModuleProvider="target">
+                                <rect key="frame" x="16" y="153.5" width="343" height="21"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="underlineWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="leftImage" value="email"/>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="비밀번호" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="PfA-w1-rN1" customClass="LoginTextField" customModule="AlamofireExample" customModuleProvider="target">
+                                <rect key="frame" x="16" y="214.5" width="343" height="21"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="leftImage" value="password"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="underlineWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="flJ-5C-Eba" customClass="LoginButton" customModule="AlamofireExample" customModuleProvider="target">
+                                <rect key="frame" x="36" y="285.5" width="303" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="dqc-GN-DNS"/>
+                                </constraints>
+                                <state key="normal" title="가입 요청">
+                                    <color key="titleColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="24"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="requestSignUp:" destination="Psw-xb-yR7" eventType="touchUpInside" id="g8y-Qh-5BN"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="OoV-Hs-6wU" firstAttribute="leading" secondItem="EID-nf-Wbj" secondAttribute="leading" constant="16" id="7ub-rr-HC4"/>
+                            <constraint firstItem="NYO-3f-z71" firstAttribute="top" secondItem="PBS-Hl-ahM" secondAttribute="bottom" constant="40" id="8x0-mL-vvM"/>
+                            <constraint firstItem="PBS-Hl-ahM" firstAttribute="leading" secondItem="EID-nf-Wbj" secondAttribute="leading" constant="16" id="FYg-Rz-ZWc"/>
+                            <constraint firstItem="PfA-w1-rN1" firstAttribute="leading" secondItem="NYO-3f-z71" secondAttribute="leading" id="PDb-bm-V5u"/>
+                            <constraint firstItem="OoV-Hs-6wU" firstAttribute="top" secondItem="LTv-Oa-TOm" secondAttribute="bottom" constant="8" id="QUc-7O-Vqq"/>
+                            <constraint firstItem="flJ-5C-Eba" firstAttribute="leading" relation="lessThanOrEqual" secondItem="EID-nf-Wbj" secondAttribute="leading" constant="36" id="QdW-Yf-E1d"/>
+                            <constraint firstItem="NYO-3f-z71" firstAttribute="leading" secondItem="EID-nf-Wbj" secondAttribute="leading" constant="16" id="Qod-Nw-xUL"/>
+                            <constraint firstItem="flJ-5C-Eba" firstAttribute="top" secondItem="PfA-w1-rN1" secondAttribute="bottom" constant="50" id="SHF-zs-EX4"/>
+                            <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="PBS-Hl-ahM" secondAttribute="trailing" id="V3R-Im-dyQ"/>
+                            <constraint firstItem="PfA-w1-rN1" firstAttribute="top" secondItem="NYO-3f-z71" secondAttribute="bottom" constant="40" id="bAE-h1-Sy6"/>
+                            <constraint firstAttribute="trailing" secondItem="NYO-3f-z71" secondAttribute="trailing" constant="16" id="bri-mb-TP6"/>
+                            <constraint firstAttribute="trailing" secondItem="flJ-5C-Eba" secondAttribute="trailing" constant="36" id="fAF-sp-SuC"/>
+                            <constraint firstItem="PfA-w1-rN1" firstAttribute="trailing" secondItem="NYO-3f-z71" secondAttribute="trailing" id="lgE-zr-1sX"/>
+                            <constraint firstItem="PBS-Hl-ahM" firstAttribute="top" secondItem="OoV-Hs-6wU" secondAttribute="bottom" constant="30" id="tIx-go-unj"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="passwordTextField" destination="PfA-w1-rN1" id="0hO-4G-TDl"/>
+                        <outlet property="usernameTextField" destination="NYO-3f-z71" id="aUC-0m-nnX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NFi-xA-sfO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="MgN-EF-HNn" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="2502" y="341"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="FastCampusLogo" width="172" height="38"/>
+        <image name="close" width="48" height="48"/>
+        <image name="email" width="40" height="40"/>
+        <image name="password" width="40" height="40"/>
+    </resources>
+</document>

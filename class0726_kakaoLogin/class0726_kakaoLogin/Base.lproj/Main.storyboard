@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7BK-dT-prj">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="class0726_kakaoLogin" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n2g-hf-pdc" customClass="KOLoginButton">
+                                <rect key="frame" x="30" y="575" width="315" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="kakaoLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hUq-If-GSG"/>
+                                    <segue destination="UgT-iE-gzn" kind="show" id="11h-Qt-cq6"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="n2g-hf-pdc" secondAttribute="bottom" constant="50" id="Gsu-1w-qcp"/>
+                            <constraint firstItem="n2g-hf-pdc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="L5g-pi-3ho"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="n2g-hf-pdc" secondAttribute="trailing" constant="30" id="VPr-qD-jgX"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="dZl-oL-bpK"/>
+                    <connections>
+                        <outlet property="kakaoLoginButton" destination="n2g-hf-pdc" id="FhI-8c-Yf0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1117.5999999999999" y="-564.46776611694156"/>
+        </scene>
+        <!--Kakao Profile View Controller-->
+        <scene sceneID="2Jm-QA-CGK">
+            <objects>
+                <viewController id="UgT-iE-gzn" customClass="KakaoProfileViewController" customModule="class0726_kakaoLogin" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="N2j-6h-SmE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mRT-Ls-5Lp">
+                                <rect key="frame" x="20" y="214" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="1N3-Tr-iHM"/>
+                                    <constraint firstAttribute="width" constant="150" id="Thr-hY-qWu"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xnR-Z5-6gU">
+                                <rect key="frame" x="112" y="433" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="bl4-43-Su9"/>
+                                    <constraint firstAttribute="width" constant="150" id="m2q-zl-3qP"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="waP-Kg-yom">
+                                <rect key="frame" x="190" y="254" width="165" height="71"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Yv-DN-URv">
+                                <rect key="frame" x="312" y="617" width="48" height="30"/>
+                                <state key="normal" title="Logout"/>
+                                <connections>
+                                    <action selector="kakaoLogoutButton:" destination="UgT-iE-gzn" eventType="touchUpInside" id="Xrs-bN-UKC"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="mRT-Ls-5Lp" firstAttribute="top" secondItem="g1k-6V-13K" secondAttribute="top" constant="150" id="1We-mo-fRo"/>
+                            <constraint firstItem="waP-Kg-yom" firstAttribute="leading" secondItem="mRT-Ls-5Lp" secondAttribute="trailing" constant="20" id="IME-I0-sIL"/>
+                            <constraint firstItem="xnR-Z5-6gU" firstAttribute="leading" secondItem="g1k-6V-13K" secondAttribute="leading" constant="112" id="MTM-Ga-MDn"/>
+                            <constraint firstItem="g1k-6V-13K" firstAttribute="trailing" secondItem="xnR-Z5-6gU" secondAttribute="trailing" constant="113" id="Nlv-Ab-wBv"/>
+                            <constraint firstItem="xnR-Z5-6gU" firstAttribute="top" relation="greaterThanOrEqual" secondItem="mRT-Ls-5Lp" secondAttribute="bottom" constant="69" id="R3c-gJ-aU2"/>
+                            <constraint firstItem="6Yv-DN-URv" firstAttribute="leading" secondItem="g1k-6V-13K" secondAttribute="leading" constant="312" id="ZLJ-pf-2bc"/>
+                            <constraint firstItem="g1k-6V-13K" firstAttribute="bottom" secondItem="6Yv-DN-URv" secondAttribute="bottom" constant="20" id="cqS-4h-lPD"/>
+                            <constraint firstItem="g1k-6V-13K" firstAttribute="trailing" secondItem="waP-Kg-yom" secondAttribute="trailing" constant="20" id="dkb-F3-15d"/>
+                            <constraint firstItem="waP-Kg-yom" firstAttribute="top" secondItem="g1k-6V-13K" secondAttribute="top" constant="190" id="fTk-Wy-eim"/>
+                            <constraint firstItem="mRT-Ls-5Lp" firstAttribute="leading" secondItem="g1k-6V-13K" secondAttribute="leading" constant="20" id="i7V-8X-ewd"/>
+                            <constraint firstItem="6Yv-DN-URv" firstAttribute="top" secondItem="waP-Kg-yom" secondAttribute="bottom" constant="292" id="jw6-C8-z58"/>
+                            <constraint firstItem="g1k-6V-13K" firstAttribute="bottom" secondItem="waP-Kg-yom" secondAttribute="bottom" constant="342" id="kgS-9H-cS9"/>
+                            <constraint firstItem="g1k-6V-13K" firstAttribute="trailing" secondItem="6Yv-DN-URv" secondAttribute="trailing" constant="15" id="ss0-dZ-mRR"/>
+                            <constraint firstItem="g1k-6V-13K" firstAttribute="bottom" secondItem="xnR-Z5-6gU" secondAttribute="bottom" constant="84" id="zcm-y6-dYl"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="g1k-6V-13K"/>
+                    </view>
+                    <connections>
+                        <outlet property="kakaoProfileName" destination="waP-Kg-yom" id="bTQ-Uf-61D"/>
+                        <outlet property="kakaoProfilePhoto" destination="mRT-Ls-5Lp" id="i0Q-yt-O81"/>
+                        <outlet property="kakaoProfilePhoto2" destination="xnR-Z5-6gU" id="2YA-DZ-VIw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bJG-Sa-zSx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1117.5999999999999" y="130.88455772113943"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="pSd-aa-18l">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="7BK-dT-prj" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iwh-tl-adS">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="ZKj-rB-ZCI"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hQo-hu-Oiy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="244" y="-564.46776611694156"/>
+        </scene>
+    </scenes>
+</document>

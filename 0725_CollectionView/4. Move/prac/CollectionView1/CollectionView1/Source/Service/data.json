@@ -1,0 +1,111 @@
+
+[
+ {
+ "state": "Alaska",
+ "cards": [
+           {
+           "name": "Acadia",
+           "image": "Acadia"
+           },
+           {
+           "name": "Arches",
+           "image": "Arches"
+           },
+           {
+           "name": "Bryce Canyon",
+           "image": "Bryce Canyon"
+           },
+           {
+           "name": "Cuyahoga Valley",
+           "image": "Cuyahoga Valley"
+           },
+           {
+           "name": "Denali",
+           "image": "Denali"
+           },
+           {
+           "name": "Glacier",
+           "image": "Glacier"
+           },
+         ]
+ },
+ {
+ "state": "Colorado",
+ "cards": [
+           {
+           "name": "Grand Canyon",
+           "image": "Grand Canyon"
+           },
+           {
+           "name": "Grand Tetons",
+           "image": "Grand Tetons"
+           },
+           {
+           "name": "Great Sand Dunes",
+           "image": "Great Sand Dunes"
+           },
+           {
+           "name": "Joshua Tree",
+           "image": "Joshua Tree"
+           },
+           {
+           "name": "Katmai",
+           "image": "Katmai"
+           },
+           {
+           "name": "Kenai Fjords",
+           "image": "Kenai Fjords"
+           },
+           {
+           "name": "Mesa Verde",
+           "image": "Mesa Verde"
+           },
+           ]
+ },
+ {
+ "state": "California",
+ "cards": [
+           {
+           "name": "Mount Rainier",
+           "image": "Mount Rainier"
+           },
+           {
+           "name": "North Cascades",
+           "image": "North Cascades"
+           },
+           {
+           "name": "Olympic",
+           "image": "Olympic"
+           },
+           {
+           "name": "Rocky Mountains",
+           "image": "Rocky Mountains"
+           },
+           {
+           "name": "Sequoia",
+           "image": "Sequoia"
+           },
+           {
+           "name": "Shenandoah",
+           "image": "Shenandoah"
+           },
+           {
+           "name": "Smokey Mountains",
+           "image": "Smokey Mountains"
+           },
+           {
+           "name": "Yellowstone",
+           "image": "Yellowstone"
+           },
+           {
+           "name": "Yosemite",
+           "image": "Yosemite"
+           },
+           {
+           "name": "Zion",
+           "image": "Zion"
+           }
+         ]
+ }
+ 
+]

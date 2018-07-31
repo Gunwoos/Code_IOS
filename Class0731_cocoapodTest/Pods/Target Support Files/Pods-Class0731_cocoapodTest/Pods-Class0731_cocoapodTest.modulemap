@@ -1,0 +1,6 @@
+module Pods_Class0731_cocoapodTest {
+  umbrella header "Pods-Class0731_cocoapodTest-umbrella.h"
+
+  export *
+  module * { export * }
+}

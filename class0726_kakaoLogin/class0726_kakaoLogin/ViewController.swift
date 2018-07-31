@@ -31,7 +31,8 @@ class ViewController: UIViewController {
              
                 let task = URLSession.shared.dataTask(with: profileURL, completionHandler: { (data, response, error) in
                     DispatchQueue.main.async {
-                        
+                        print(profileURL
+                        )
                     }
                 })
                 task.resume()
